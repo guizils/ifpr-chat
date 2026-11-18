@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ARKHIVINOS | Comunicação</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="identity">
+      <img
+        src="header-reference.png"
+        alt="Instituto Federal do Paraná e ARKHIVINOS"
+      >
+    </div>
+
+    <nav class="navigation">
+      <div class="nav-links">
+        <a href="#inicio">Início</a>
+        <a href="#projetos">Projetos Anteriores</a>
+        <a href="#adicionar">Adicione seu Projeto</a>
+        <a href="#comunicacao" class="selected">Comunicação</a>
+        <a href="#ifinos">IFINOS</a>
+        <a href="#sobre">Sobre nós</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="comunicacao" class="main-panel">
+    <h1>Comunicação</h1>
+    <div class="title-rule"></div>
+
+    <p class="intro">
+      Converse com outros participantes e acompanhe
+      suas mensagens.
+    </p>
+
+    <div class="chat-shell">
+
+      <aside class="sidebar">
+        <div class="account-box">
+          <label for="account">Acessar como</label>
+          <select id="account"></select>
+        </div>
+
+        <div class="side-title">
+          <h2>Conversas</h2>
+          <small>Selecione um contato</small>
+        </div>
+
+        <div id="contacts" class="contacts"></div>
+
+        <p class="note">
+          Ambiente de demonstração com usuários fictícios.
+        </p>
+      </aside>
+
+      <section class="chat">
+        <div class="chat-head">
+          <span class="avatar" id="avatar">?</span>
+          <div>
+            <h2 id="chatName">Selecione um contato</h2>
+            <small>Conversa privada</small>
+          </div>
+        </div>
+
+        <div id="messages" class="messages">
+          <p class="empty">
+            Escolha um contato para começar.
+          </p>
+        </div>
+
+        <form id="messageForm">
+          <input
+            id="messageInput"
+            type="text"
+            placeholder="Digite sua mensagem..."
+            maxlength="2000"
+            autocomplete="off"
+            disabled
+            required
+          >
+
+          <button id="send" type="submit" disabled>
+            Enviar ➤
+          </button>
+        </form>
+      </section>
+
+    </div>
+  </main>
+
+  <footer>
+    ARKHIVINOS • Projeto demonstrativo • IFPR
+  </footer>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
+
